@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<item>
+		<key>NAME</key>
+		<value>Priyesh</value>
+	</item>
+	<item>
+		<key>Address</key>
+		<value>215 Cheeseman St, Erie, CO 80516</value>
+	</item>
+	<item>
+		<key>EMAIL_ADDRESS</key>
+		<value>psanghvi@gmail.com</value>
+	</item>
+	<item>
+		<key>MESSAGE</key>
+		<value>Hello, This is test message from AutoTestR</value>
+	</item>
+</root>
+

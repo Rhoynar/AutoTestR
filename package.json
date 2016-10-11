@@ -1,0 +1,22 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "This tool generate selenium PO model files from html files in C#, Java and Robot framework",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "jsdom": "^7.2.2",
+    "line-reader": "^0.3.0",
+    "promise": "^7.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Balram",
+  "license": "MIT"
+}

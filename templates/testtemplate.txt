@@ -1,0 +1,36 @@
+import java.util.Map;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
+public class CLASSTests {
+	static WebDriver web;
+	static CLASS sc;
+	Map <String, String> mapData;
+	
+	@BeforeSuite
+	public void BeforeSuite() throws Exception
+	{
+	    DataMapGen dmg = new DataMapGen();
+	    mapData = dmg.getDataMap();	
+	}
+	        
+	@BeforeMethod
+	public void BeforeTest()
+	{
+		web = new FirefoxDriver();
+    	web.get("URL");
+    	web.manage().window().maximize();    		
+		sc = new CLASS (web,mapData);
+    	PageFactory.initElements(web, sc);
+	}
+	
+	@AfterMethod
+	public void AfterTest()
+	{
+		web.quit();
+	}
